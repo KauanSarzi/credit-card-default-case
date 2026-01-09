@@ -41,7 +41,7 @@ Carreguei o CSV no BigQuery e fiz uma checagem inicial:
 - campos necessários para análise
 
 ### 3) Process (limpeza)
-Criei uma tabela “clean” a partir da raw para não alterar os dados originais.
+Criei uma tabela "clean" a partir da raw para não alterar os dados originais.
 
 Principais ajustes:
 - **Idade**: mantive somente valores em faixa plausível (ex.: 18 a 100)
@@ -55,29 +55,29 @@ Principais ajustes:
 - `min(age)` / `max(age)`
 - verificação de valores inválidos antes/depois
 
-As queries usadas estão em: **/sql/01_create_clean_table.sql** e **/sql/02_validation_checks.sql**
+As queries usadas estão em: **scripts/create_credit_clean.sql** e **scripts/validation_checks.sql**
 
 ### 4) Analyze
 Foquei em métricas simples e interpretáveis para crédito:
-- **Taxa de default** (default_flag)
+- **Taxa de default** (default_next_month)
 - **Atraso recente** (PAY_0)
 - **Limite de crédito** (limit_balance)
 
-Queries em: **/sql/03_analysis_queries.sql**
+Queries em: **scripts/analysis_querys.sql**
 
 ### 5) Share (Dashboard)
 Montei um dashboard com 3 visões principais:
 1. **Distribuição de clientes por status de inadimplência**
 2. **Taxa de inadimplência por atraso no último mês (PAY_0)**
-3. **Limite de crédito mediano por status de inadimplência**
+3. **Limite de crédito médio por status de inadimplência**
 
-📷 Print do dashboard: **/dashboard/dashboard.png**
+📷 Print do dashboard: **dashboard/dashboard.png**
 
 ### 6) Act (recomendações)
 Com base nos gráficos, as recomendações são:
 - Priorizar **comportamento recente** (PAY_0) como variável-chave de risco
 - Evitar decisões baseadas somente no **limite de crédito**
-- Criar faixas operacionais de risco (ex.: PAY_0 <= 0 baixo risco, PAY_0 = 1 moderado, PAY_0 >= 2 alto)
+- Criar faixas operacionais de risco 
 
 ---
 
@@ -90,7 +90,7 @@ Com base nos gráficos, as recomendações são:
 - A partir de atraso ≥ 1, o risco aumenta de forma relevante.
 
 **3) Limite alto não garante segurança**
-- Clientes sem default tendem a ter **limite mediano maior**, mas ainda existem inadimplentes com limites altos.
+- Clientes sem default tendem a ter **limite médio maior**, mas ainda existem inadimplentes com limites altos.
 - Portanto, limite de crédito isoladamente não é um bom critério de risco.
 
 ---
@@ -98,16 +98,18 @@ Com base nos gráficos, as recomendações são:
 ## Como reproduzir (passo a passo)
 1. Importar o dataset para o BigQuery (tabela raw)
 2. Executar o script de limpeza:
-   - `sql/01_create_clean_table.sql`
+   - `scripts/create_credit_clean.sql`
 3. Rodar validações:
-   - `sql/02_validation_checks.sql`
+   - `scripts/validation_checks.sql`
 4. Rodar queries de análise:
-   - `sql/03_analysis_queries.sql`
+   - `scripts/analysis_querys.sql`
 5. Conectar o Looker Studio no BigQuery e montar os gráficos
 
 ---
 
 ## Autor
-**SEU NOME**
-- Data Analytics (foco em mercado financeiro)
-- LinkedIn: (opcional)
+**Kauan Sarzi da Rocha**
+- LinkedIn: Kauan Sarzi
+  
+---
+
