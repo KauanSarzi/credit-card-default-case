@@ -107,19 +107,19 @@ Com base nos gráficos, as recomendações são:
 
 ## Principais Insights
 **1) Dimensão do problema**
-**O que eu vi:** aproximadamente **22%** dos clientes entram em default na base analisada.  
-**Por que importa:** é um volume relevante e justifica tratar risco como prioridade (não é um caso “raro”).  
-**Decisão que isso apoia:** segmentar risco e priorizar ações preventivas para grupos mais vulneráveis
+- **O que eu vi:** aproximadamente **22%** dos clientes entram em default na base analisada.  
+- **Por que importa:** é um volume relevante e justifica tratar risco como prioridade (não é um caso “raro”).  
+- **Decisão que isso apoia:** segmentar risco e priorizar ações preventivas para grupos mais vulneráveis
 
 **2) Atraso recente é o sinal mais forte**
-**O que eu vi:** a taxa de default cresce conforme aumenta o nível de atraso no último mês (PAY_0).  
-**Por que importa:** comportamento recente de pagamento é um indicador forte e fácil de usar em regras de risco.  
-**Decisão que isso apoia:** clientes com PAY_0 ≥ 1 devem ser monitorados e tratados com mais cautela
+- **O que eu vi:** a taxa de default cresce conforme aumenta o nível de atraso no último mês (PAY_0).  
+- **Por que importa:** comportamento recente de pagamento é um indicador forte e fácil de usar em regras de risco.  
+- **Decisão que isso apoia:** clientes com PAY_0 ≥ 1 devem ser monitorados e tratados com mais cautela
 
 **3) Limite alto não garante segurança**
-**O que eu vi:** clientes sem default tendem a ter limite médio maior, mas ainda existem clientes com default mesmo com limite alto
-**Por que importa:** limite de crédito isoladamente pode gerar falsas conclusões  
-**Decisão que isso apoia:** usar limite como apoio, mas sempre combinado com histórico de pagamento 
+- **O que eu vi:** clientes sem default tendem a ter limite médio maior, mas ainda existem clientes com default mesmo com limite alto
+- **Por que importa:** limite de crédito isoladamente pode gerar falsas conclusões  
+- **Decisão que isso apoia:** usar limite como apoio, mas sempre combinado com histórico de pagamento 
 
 ---
 
