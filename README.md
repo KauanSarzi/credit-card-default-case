@@ -11,7 +11,7 @@ Entender **o tamanho do problema** de inadimplência e identificar **sinais de r
 - **Nome:** Default of Credit Card Clients (UCI / Kaggle)
 - **Observações:** ~30 mil clientes
 - **Tipo:** Dados públicos (open data)
-- **Link:** https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset
+- **Link:** [UCI Machine Learning Repository](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)
 
 > O dataset original possui ~30.000 linhas, porém durante a importação do CSV no BigQuery algumas linhas foram descartadas por erro de parsing (foi necessário permitir um número pequeno de registros inválidos para concluir a carga), deixando o tamanho do dataset em 29.993
 
