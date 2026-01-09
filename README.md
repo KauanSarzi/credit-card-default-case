@@ -107,7 +107,7 @@ Com base nos gráficos, as recomendações são:
 
 ## Principais Insights
 **1) Dimensão do problema**
-- **O que eu vi:** aproximadamente **22%** dos clientes entram em default na base analisada.  
+**O que eu vi:** aproximadamente **22%** dos clientes entram em default na base analisada.  
 **Por que importa:** é um volume relevante e justifica tratar risco como prioridade (não é um caso “raro”).  
 **Decisão que isso apoia:** segmentar risco e priorizar ações preventivas para grupos mais vulneráveis
 
@@ -133,6 +133,7 @@ Com base nos gráficos, as recomendações são:
 ## Autor
 **Kauan Sarzi da Rocha**
 - LinkedIn: Kauan Sarzi
+- Email: kauansarzi24@gmail.com
   
 ---
 
