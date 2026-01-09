@@ -49,7 +49,7 @@ Principais ajustes:
 - **MARRIAGE**: valores fora do padrão foram agrupados em uma categoria válida
 - Padronizei nomes e tipos para facilitar análise
 
-✅ **Prova de que houve limpeza** (checagens):
+Checagens:
 - `rows_raw` vs `rows_clean`
 - distribuição de categorias após padronização
 - `min(age)` / `max(age)`
