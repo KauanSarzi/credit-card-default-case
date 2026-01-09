@@ -46,17 +46,11 @@ Identificar **sinais de alerta precoce** permite:
 
 #### Hipóteses
 
-**H1: Dimensão do problema**  
-- **Expectativa:** Default representa > 15% da base (volume relevante que justifica análise estruturada).  
-- **Justificativa:** Se for raro (< 5%), pode não justificar esforço; se for comum, precisa estruturar políticas de risco.
+- **H0:** O default não é raro (tem um % relevante na base).
 
-**H2: Atraso recente (PAY_0) como sinal de risco**  
-- **Expectativa:** Taxa de default cresce conforme PAY_0 aumenta.  
-- **Justificativa:** Atraso recente indica dificuldade financeira atual, diferente de histórico antigo.
+- **H1:** Atraso recente (PAY_0) é um sinal forte de risco
 
-**H3: Limite de crédito alto não garante segurança**  
-- **Expectativa:** Existem inadimplentes mesmo com limite alto.  
-- **Justificativa:** Limite é definido por renda/histórico passado, mas não garante capacidade de pagamento futuro.
+- **H2:** Limite de crédito ajuda, mas não explica risco sozinho
   
 ---
 
