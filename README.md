@@ -132,7 +132,7 @@ Com base nos gráficos, as recomendações são:
 
 ## Autor
 **Kauan Sarzi da Rocha**
-- LinkedIn: Kauan Sarzi
+- LinkedIn: [Kauan Sarzi](https://linkedin.com/in/kauan-sarzi)
 - Email: kauansarzi24@gmail.com
   
 ---
