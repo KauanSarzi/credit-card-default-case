@@ -33,6 +33,17 @@ and visualization in Looker Studio.
 
 ---
 
+## What I Learned
+- Writing analytical SQL queries in BigQuery
+- Working with cloud data platforms (GCP)
+- Translating business questions into data analysis
+- Building dashboards for data visualization
+
+---
+
 ## Author
-Kauan Sarzi — github.com/KauanSarzi
+***Kauan Sarzi***
+- GitHub: [KauanSarzi](https://github.com/KauanSarzi)
+- LinkedIn: [Kauan Sarzi](https://linkedin.com/in/kauan-sarzi )
+- Email: kauansarzi24@gmail.com
 
