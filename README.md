@@ -43,9 +43,10 @@ Analyze customer financial behavior and identify variables associated with highe
 
 ## Project Structure
 
-scripts/
+
 dashboard/
-assets/
+scripts/
+data/
 README.md
 
 
